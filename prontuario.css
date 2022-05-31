@@ -1,0 +1,75 @@
+/* Header */
+header{
+    background: #2d7a8a;
+    height: 80px;
+    width: 100%
+}
+
+.logopos {
+     float: left;
+     margin-left: 25px;
+     padding: 15px;
+     width: 5%;
+}
+
+.icn_hamb {
+     /* float: left; */
+     margin-left: 1px;
+     padding: 15px;
+     width: 10%;
+     display: inline-block;
+}
+
+.form_center {
+     margin: auto; 
+     width: 50%; 
+     padding: 10px;
+}
+
+.form_text_box {
+     width: 620px; 
+     height: 100px;
+}
+
+
+
+.icn_exit {
+    
+     position: absolute;
+     left: 1100px;
+     padding: 15px;
+     width: 2%;
+     display: inline-block;
+}
+/* Header fim */
+
+form {
+    width: 100%
+}
+
+.text_font {
+    font-family: 'Syne';
+}
+.button_form {
+     background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #204523;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Syne;
+	font-size:10px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+     position: relative; 
+     cursor: pointer;
+     
+}
+.button_form:hover {
+	background-color:#3a4d2f;
+}
+.button_form:active {
+	position:relative;
+	top:1px;
+}
