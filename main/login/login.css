@@ -1,0 +1,59 @@
+{
+    box-sizing: border-box;
+  }
+  
+  body {
+height: 100%;
+background: linear-gradient(90deg, white 50%, #2D7B8A 50%);
+}
+
+  .flex-container {
+    margin-top:80px;
+    display: flex;
+    flex-wrap:nowrap;
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    background-color: #2D7B8A;
+    flex: 50%;
+
+  }
+
+  .flex-item-right {
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+  }
+
+  .login{
+    background: #ffffff;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    
+  }
+  .login{
+    display: inline-block;
+    padding-top: 50px;
+  }
+  .submit{
+    background-color: #72DE92;
+
+    height: 10px;
+    /* padding: 10px; */
+    border-radius: 8px;
+  }
+
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
