@@ -3,11 +3,11 @@
 // ------------------------------------------------------------------------
 
 const menus = [
-    // {
-    //     nome: 'Cadastro',
-    //     url: '../cadastro-paciente/cadastro-paciente.html',
-    //     ativo: window.location.href.includes('cadastro-paciente.html')
-    // },
+    {
+        nome: 'Médicos',
+        url: '../cadastro/medico/lista/lista.html',
+        ativo: window.location.href.includes('lista.html')
+    },
     {
         nome: 'Fila Atendimento',
         url: '../fila-atendimento/fila-atendimento.html',
