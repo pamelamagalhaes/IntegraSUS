@@ -1,0 +1,18 @@
+.container {
+    padding: 10px 15px;
+}
+
+.container > div#dados-cadastro {
+    display: none;
+    line-height: 28px;
+}
+
+.container > div#dados-nao-encontrados {
+    display: none;
+    background-color: rgb(255, 227, 227);
+    color: red;
+    padding: 25px;
+    border: solid 1px red;
+    border-radius: 3px;
+    margin: 10px 0;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="layout.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Syne' rel='stylesheet'>
+    <title>Exames</title>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <style>
+        /* Minhas alterações */
+
+        .scroll-x {
+            overflow-x: auto;
+        }
+
+        .scroll-y {
+            overflow-y: auto;
+        }
+
+        .header.row {
+            height: 100px;
+            top: 0;
+            background: #2d7a8a;
+        }
+
+        body {
+            margin: 0
+        }
+
+        .row,
+        .col {
+            overflow: hidden;
+            position: absolute;
+        }
+
+        .row {
+            left: 0;
+            right: 0;
+        }
+
+        .body.row {
+            top: 100px;
+            left: 300px;
+            bottom: 0px;
+        }
+
+        .side_bar.row {
+            background: #72de92;
+            top: 100px;
+            right: 300px;
+            bottom: 0px;
+        }
+
+        .logo {
+            height: 100px;
+            position: relative;
+            left: 0;
+            width: 300px;
+        }
+
+        .logo-image {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .log-out {
+            background-color: blue;
+            position: relative;
+            width: 1000px;
+        }
+
+        .sidebar {
+            position: relative;
+            width: 300px;
+            height: 100%;
+            margin-top: 51px;
+            padding-top: 30px;
+            left: 0;
+            background: #72de92;
+            transition: 0.5s;
+            transition-property: left;
+        }
+
+        .sidebar a {
+            color: #fff;
+            display: block;
+            width: 100%;
+            line-height: 60px;
+            text-decoration: none;
+            padding-left: 40px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            transition-property: background;
+        }
+
+        .sidebar a:hover {
+            background: #51b3ec;
+        }
+
+        .sidebar ion-icon {
+            padding-right: 10px;
+        }
+
+        #H5router p {
+            color: white;
+        }
+
+        .router_box {
+            border: 3px solid black;
+        }
+
+        .black {
+            background: #000;
+        }
+
+        /* end of screen rules. */
+    </style>
+    <script>
+        function myFunction(id) {
+
+            this.rota = `./${id}/${id}.html`
+            document.getElementById("rota").src = rota
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header row">
+        <div class="logo">
+            <img class="logo-image" src="../img/logobranco.png" width="75" height="75">
+        </div>
+        <div class="sidebar-buttom">
+
+        </div>
+        <div class="log-out">
+            <a href="../login/login.html">
+                <img src="../img/icn_exit.jpeg" width="50" height="50" />
+            </a>
+        </div>
+    </header>
+
+    <div class="">
+        <div class="side_bar row" style="width: 300px;">
+            <div class="sidebar" style="color: white">
+                <a onclick="myFunction('fila-atendimento');">
+                    <ion-icon name="arrow-forward-outline"></ion-icon><span>Fila de Atendimento</span>
+                </a>
+                <!-- <a onclick="myFunction('triagem');"> -->
+                <a href="./triagem/triagem.html">
+                    <ion-icon name="heart"></ion-icon><span>Triagem</span>
+                </a>
+                <a onclick="myFunction('prontuario');">
+                    <ion-icon name="medkit"></ion-icon><span>Prontuário Medico</span>
+                </a>
+
+                <a  onclick="myFunction('map');">
+                    <ion-icon name="map"></ion-icon><span>Mapa</span>
+                </a>
+                <a onclick="myFunction('exame');">
+                    <ion-icon name="receipt-outline"></ion-icon>
+                    </ion-icon><span>Exames</span>
+                </a>
+            </div>
+        </div>
+        <div class="body row scroll-y">
+
+            <iframe id="rota" src=""></iframe>
+
+        </div>
+    </div>
+</body>

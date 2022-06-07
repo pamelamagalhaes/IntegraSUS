@@ -1,9 +1,7 @@
 
 /* Header */
-header{
-    background: #2d7a8a;
-    height: 100px;
-    width: 100%;
+header {
+    padding: 5px 15px;
 }
 
 #map {
