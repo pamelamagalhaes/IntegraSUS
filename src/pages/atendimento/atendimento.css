@@ -1,0 +1,18 @@
+.container {
+    padding: 10px 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+button#novo-atendimento {
+    padding: 10px 15px;
+    margin-left: auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

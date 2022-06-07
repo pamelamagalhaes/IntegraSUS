@@ -1,11 +1,15 @@
 
 /* Header */
-header{
+/* header{
     background: #2d7a8a;
     height: 100px;
     width: 100%;
-}
+} */
 
+.container {
+     padding: 10px 15px;
+}
+/* 
 #map {
      height: 450px;
      width: 100%;
@@ -19,7 +23,7 @@ header{
 }
 
 /* Header fim */
-
+/* 
 form {
     width: 100%;
 }
@@ -50,4 +54,4 @@ form {
 .button_form:active {
 	position:relative;
 	top:1px;
-}
+}  */

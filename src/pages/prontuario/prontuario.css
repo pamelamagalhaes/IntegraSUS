@@ -1,5 +1,4 @@
-/* Header */
-header{
+/* header{
     background: #2d7a8a;
     height: 80px;
     width: 100%
@@ -13,7 +12,6 @@ header{
 }
 
 .icn_hamb {
-     /* float: left; */
      margin-left: 1px;
      padding: 15px;
      width: 10%;
@@ -41,7 +39,6 @@ header{
      width: 2%;
      display: inline-block;
 }
-/* Header fim */
 
 form {
     width: 100%
@@ -72,4 +69,4 @@ form {
 .button_form:active {
 	position:relative;
 	top:1px;
-}
+} */
