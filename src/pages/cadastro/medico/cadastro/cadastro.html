@@ -49,110 +49,146 @@
                             <!--<div class="alert alert-warning">Contato não encontrado.</div>-->
                         </div>
                     </div>
-                    <div>
 
-                        <form id="form-contato">
+
+                    <form id="form-contato">
+                        <div class="form-group row">
+                            <div class="col-sm-4">
+                                <label for="inputId">ID</label>
+                                <input type="text" class="form-control"
+                                    id="inputId"
+                                    placeholder="ID" disabled>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <label for="inputNome">Nome (*)</label>
+                                <input type="text" class="form-control"
+                                    id="inputNome" required
+                                    placeholder="Informe o nome" size="28">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-5">
+                                <label for="inputIdade">Idade(*)</label>
+                                <input type="text" class="form-control"
+                                    id="inputIdade" required
+                                    placeholder="Idade" size="15">
+                            </div>
+
+                            <div class="col-sm-7">
+                                <label for="inputEmail">E-mail(*)</label>
+                                <input type="email" class="form-control"
+                                    id="inputEmail" required
+                                    placeholder="Informe o e-mail"
+                                    size="17">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="inputData">Data de Nascimento</label>
+                                <input type="date" class="form-control"
+                                    id="inputData" required
+                                    placeholder="Informe a
+                                    data de nascimento" size="6"><br>
+                            </div>
+
+
+                            <div class="col-sm-6">
+                                <label for="inputSexo" class="col-sm-6"
+                                    id="inputSexo"
+                                    required>Sexo</label>
+                                <select name="Sexo" class="form-control">
+                                    <option value="" placeholder>Informe
+                                        gênero</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <label for="inputEndereço">Endereço</label>
+                                <input type="text" class="form-control"
+                                    id="inputEndereço" required
+                                    placeholder="Informe endereço"
+                                    size="22">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-4">
+                                <label for="inputNumero">Número</label>
+                                <input type="text" class="form-control"
+                                    id="inputNumero" required
+                                    placeholder="Informe numero da casa"
+                                    size="24">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-8">
+                                <label for="inputComplemento">Complemento</label>
+                                <input type="text" class="form-control"
+                                    id="inputComplemento" required
+                                    placeholder="Apto, número, bloco, casa..."
+                                    size="34">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-8">
+                                <label for="inputregistroProfissional">Númedo de
+                                    registro profissional</label>
+                                <input type="text" class="form-control"
+                                    id="inputregistroProfissional" required
+                                    placeholder="Informe o número de registro
+                                    profissional" size="35">
+                            </div>
+
                             <div class="form-group row">
                                 <div class="col-sm-4">
-                                    <label for="inputId">ID</label>
-                                    <input type="text" class="form-control"
-                                        id="inputId"
-                                        placeholder="ID" disabled>
-                                </div>
-
-                                <div class="col-sm-8">
-                                    <label for="inputNome">Nome (*)</label>
-                                    <input type="text" class="form-control"
-                                        id="inputNome" required
-                                        placeholder="Informe o nome" size="28">
+                                    <small>(*) Campos obrigatórios</small>
                                 </div>
                             </div>
-
-                            <div class="form-group row">
-                                <div class="col-sm-5">
-                                    <label for="inputIdade">Idade(*)</label>
-                                    <input type="text" class="form-control"
-                                        id="inputIdade" required
-                                        placeholder="Idade" size="15">
-                                </div>
-
-                                <div class="col-sm-7">
-                                    <label for="inputEmail">E-mail(*)</label>
-                                    <input type="email" class="form-control"
-                                        id="inputEmail" required
-                                        placeholder="Informe o e-mail"
-                                        size="17">
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col-sm-6">
-                                    <label for="inputData">Data de Nascimento</label>
-                                    <input type="text" class="form-control"
-                                        id="inputData" placeholder="Informe a
-                                        data de nascimento" size="6">
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <label for="inputSexo">Sexo</label>
-                                    <input type="text" class="form-control"
-                                        id="inputSexo" required
-                                        placeholder="Informe gênero" size="15">
-                                </div>
-                            </div>
-
                             <div class="form-group row">
                                 <div class="col-sm-12">
-                                    <label for="inputEndereço">Endereço</label>
-                                    <input type="text" class="form-control"
-                                        id="inputEndereço" required
-                                        placeholder="Informe endereço"
-                                        size="22">
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col-sm-4">
-                                    <label for="inputNumero">Número</label>
-                                    <input type="text" class="form-control"
-                                        id="inputNumero" required
-                                        placeholder="Informe numero da casa"
-                                        size="24">
-
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col-sm-8">
-                                    <label for="inputComplemento">Complemento</label>
-                                    <input type="text" class="form-control"
-                                        id="inputComplemento" required
-                                        placeholder="Apto, número, bloco,
-                                        casa..." size="34">
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col-sm-8">
-                                    <label for="inputregistroProfissional">Númedo
-                                        de
-                                        registro profissional</label>
-                                    <input type="text" class="form-control"
-                                        id="inputregistroProfissional" required
-                                        placeholder="Informe o número de
-                                        registro profissional" size="35">
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col-sm-12">
+                                    
                                     <input type="button" class="btn btn-success"
-                                        id="btnInsert" value="Inserir">
-                                </section>
+                                        id="btnInsert" value="Inserir" onclick="inserir()">
+                                    <input type="button" class="btn btn-warning"
+                                        id="btnUpdate" value="Alterar">
+                                    <input type="button" class="btn btn-danger"
+                                        id="btnDelete" value="Excluir">
+                                    <input type="button" class="btn
+                                        btn-secondary" id="btnClear"
+                                        value="Limpar Form">
+                                    <a href="lista_contatos.html"><input
+                                            type="button" class="btn
+                                            btn-warning" id="btnClear"
+                                            value="Pesquisar Contatos"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
 
-                            </main>
+                    
+                </div>
+            </section>
+            
+        </main>
 
-                            <!-- JavaScript necessário para funcionamento do template geral -->
-                            <script src="../../../../template/template.js"></script>
-                        </body>
-                    </html>
+        <!-- JavaScript necessário para funcionamento do template geral -->
+        <script src="../../../../template/template.js"></script>
+        <!-- JavaScript utilizado nesta página -->
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="./cadastro.js"></script>
+
+
+    </body>
+
+</html>

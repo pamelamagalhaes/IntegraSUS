@@ -1,5 +1,5 @@
 // declara um conjunto inicial de contatos
-var db = {
+var db_contatos_inicial = {
     "data": [
         {
             "id": 1,
@@ -127,6 +127,26 @@ var db = {
     ]
 }
 
+$('td').click(function () {
+    var col = $(this).index(),
+        row = $(this).parent().index();
+
+    console.log("row index:" + row + ", col index :" + col);
+});
+
+// Caso os dados já estejam no Local Storage, caso contrário, carrega os dados iniciais
+var db = JSON.parse(localStorage.getItem('db_contato'));
+
+if (!db) {
+    db = db_contatos_inicial
+    // Atualiza dados LocalStorge
+    localStorage.setItem('db_contato', JSON.stringify(db));
+};
+
+// Exibe mensagem em um elemento de ID msg
+function displayMessage(msg) {
+    $('#msg').html('<div class="alert alert-warning">' + msg + '</div>');
+}
 
 function OnInit() {
 
@@ -136,21 +156,21 @@ function OnInit() {
 function filtrar() {
     input = document.getElementById("nome").value;
 
-    var contatos = db.data.filter(function (i,n){
+    var contatos = db.data.filter(function (i, n) {
         return n.nome.includes(input);
     })
-   
+
     this.insert(contatos)
 }
 
-function insert(dados) {
+function insert() {
 
     // limpa a lista de contatos apresentados
     $("#table-contatos").empty();
 
     // Popula a tabela com os registros do banco de dados
-    for (let index = 0; index < dados.data.length; index++) {
-        const contato = dados.data[index];
+    for (let index = 0; index < db.data.length; index++) {
+        const contato = db.data[index];
 
 
         // Inclui o contato na tabela    

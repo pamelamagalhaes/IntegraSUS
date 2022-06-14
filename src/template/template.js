@@ -33,11 +33,6 @@ const menus = [
         url: '../exame/exame.html',
         ativo: window.location.href.includes('exame.html')
     },
-    // {
-    //     nome: 'Início',
-    //     url: '../inicio/inicio.html',
-    //     ativo: window.location.href.includes('inicio.html')
-    // },
     {
         nome: 'Atendimento',
         url: '../atendimento/atendimento.html',
@@ -72,7 +67,6 @@ let sidebar = document.getElementById('main-sidebar');
 
 // Elemento que carregará o sidebar do sistema foi encontrado
 if (sidebar) {
-
     // Lista que agrupará os menus
     let htmlMenuList = document.createElement("ul");
 
@@ -83,6 +77,8 @@ if (sidebar) {
 
         htmlAnchor.innerText = menu.nome;
         htmlAnchor.href = menu.url;
+
+        console.log(htmlAnchor.href)
 
         // Insere o elemento de link (tag <a> - anchor) dentro do item que será inserido na lista (<li>)
         htmlListItem.appendChild(htmlAnchor);
