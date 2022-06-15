@@ -1,5 +1,5 @@
 // declara um conjunto inicial de contatos
-var db_contatos_inicial = {
+var db_contatos = {
     "data": [
         {
             "id": 1,
@@ -138,7 +138,7 @@ $('td').click(function () {
 var db = JSON.parse(localStorage.getItem('db_contato'));
 
 if (!db) {
-    db = db_contatos_inicial
+    db = db_contatos
     // Atualiza dados LocalStorge
     localStorage.setItem('db_contato', JSON.stringify(db));
 };
